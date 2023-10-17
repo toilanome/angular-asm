@@ -1,0 +1,22 @@
+<div class="container padding-top-cus g-5 d-flex" *ngIf="product">
+  <div class="col-lg-6 col-12">
+    <img [src]="product.imageUrl" alt="" class="m-1 w-100 sliderMainImage" height="600" />
+  </div>
+  <div class="col-12 col-lg-6 ms-5">
+    <h2 class="">{{ product.name }}</h2>
+    <h4 class="my-2 fw-normal">
+      Price : {{ product.price }}
+      <small class="fw-normal">VNĐ</small>
+    </h4>
+
+    <button class="w-100 bg-black text-white my-3 p-2 fw-bold">
+      Add To Bags
+    </button>
+    <div>
+      <h4 class="display-5">Description</h4>
+      <p>
+        {{ product.description }}
+      </p>
+    </div>
+  </div>
+</div>

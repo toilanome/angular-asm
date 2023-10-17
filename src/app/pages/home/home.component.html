@@ -1,0 +1,111 @@
+<div class="container position-relative text-center">
+  <header class="position-relative text-center text-white mb-5">
+    <img
+      src="https://style-republik.com/wp-content/uploads/2020/10/Vietnam-fashion-week.jpg"
+      alt="Banner"
+      class="w-100"
+    />
+    <div
+      class="position-absolute top-50 start-50 translate-middle-x w-100 px-3"
+    >
+      <h1 class="display-4">FPT-POLYTECHNIC 2023</h1>
+      <a href="#new" class="btn btn-light">Explore New Arrivals</a>
+    </div>
+  </header>
+  <h2 class="display-6 py-5">Most Popular</h2>
+
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center flex-column flex-lg-row my-5"
+    id="new"
+  >
+    <div
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let product of products; index as i"
+    >
+      <div class="card m-2" *ngIf="i < 3">
+        <div class="card-body">
+          <a [routerLink]="['/product-detail/', product.id]">
+            <img
+              [src]="product.imageUrl"
+              alt=""
+              class="card-img-top"
+              height="300"
+            />
+          </a>
+
+          <p class="card-text fw-bold">{{ product.name }}</p>
+          <small class="text-secondary">{{ product.price }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="/product" class="btn btn-outline-dark my-5"> View All Product </a>
+  <div
+    class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5"
+  >
+    <div
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let product of products; index as i"
+    >
+      <div *ngIf="i < 3">
+        <div class="position-relative m-2">
+          <img
+            [src]="product.imageUrl"
+            alt=""
+            height="300"
+            class="card-img-top"
+          />
+
+          <a
+            [routerLink]="['/product-detail/', product.id]"
+            class="btn btn-light position-absolute start-0 bottom-0 ms-2 mb-2 d-block"
+            >{{ product.name }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-start align-items-center gy-5 my-5">
+    <div class="col-12 col-md-6">
+      <img
+        src="https://watermark.lovepik.com/photo/20211208/large/lovepik-fashionable-womens-clothing-picture_501667331.jpg"
+        alt=""
+        class="w-100 h-100"
+      />
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <h2 class="display-4">Brand</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          consectetur iure deleniti eligendi, nostrum eum laudantium voluptatem
+          nemo provident ipsam ipsum, eos exercitationem, rerum eaque ex. Dolore
+          quod numquam tempora.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-start align-items-center gy-5 my-5">
+    <div class="col-12 col-md-6">
+      <div>
+        <h2 class="display-4">Awards</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          consectetur iure deleniti eligendi, nostrum eum laudantium voluptatem
+          nemo provident ipsam ipsum, eos exercitationem, rerum eaque ex. Dolore
+          quod numquam tempora.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <img
+        src="https://i.pinimg.com/originals/a8/7f/2f/a87f2fe770b00507aa7e837484e949e2.jpg"
+        alt=""
+        class="w-100 h-100"
+      />
+    </div>
+  </div>
+</div>

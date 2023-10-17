@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+      "name": "Thời Trang Sành Điệu",
+      "price": "200",
+      "imageUrl": "https://images.careerbuilder.vn/content/images/vat-va-nghe-chup-anh-thoi-trang-careerbuilder.jpg",
+      "desc": "Mô tả",
+      "id": "1",
+      "description": "dddđeeeeeeeeeeee"
+    },
+    {
+      "name": "Thời Trang Sành Điệu",
+      "price": "200",
+      "imageUrl": "https://reviewnhiepanh.com/wp-content/uploads/2021/06/Chup-anh-lookbook-gia-re-TPHCM-950x500.jpg",
+      "desc": "Mô tả",
+      "id": "2",
+      "description": "dddđeeeeeeeeeeee"
+    },
+    {
+      "name": "Thời Trang Sành Điệu",
+      "price": "200",
+      "imageUrl": "https://www.elle.vn/wp-content/uploads/2019/02/27/elle-viet-nam-streetstyle-tuan-le-thoi-trang-35.jpg",
+      "desc": "Mô tả",
+      "id": "3",
+      "description": "dddđeeeeeeeeeeee"
+    },
+    {
+      "name": "Thời Trang Sành Điệu",
+      "price": "200",
+      "imageUrl": "https://watermark.lovepik.com/photo/20211124/large/lovepik-fashion-womens-summer-shopping-image-picture_500961857.jpg",
+      "desc": "Mô tả",
+      "id": "4",
+      "description": "dddđeeeeeeeeeeee"
+    },
+    {
+      "name": "Thời Trang Sành Điệu",
+      "price": "200",
+      "imageUrl": "https://cdn3.dhht.vn/wp-content/uploads/2023/09/avt-10-thuong-hieu-thoi-trang-nu-noi-tieng-nhat-gia-binh-dan.jpg",
+      "desc": "Mô tả",
+      "id": "5",
+      "description": "dddđeeeeeeeeeeee"
+    },
+    {
+      "name": "nnb",
+      "price": "01111111",
+      "description": "222222222222",
+      "imageUrl": "https://palstudio.vn/wp-content/uploads/2021/06/chup-anh-quang-cao-thoi-trang-dep.jpg",
+      "id": "t9ZggbZ"
+    }
+  ],
+  "users": [
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "email": "ngtthuhang25@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 2
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 3
+    },
+    {
+      "email": "stu715903004@hnue.edu.vn",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 4
+    },
+    {
+      "email": "stu715903004@hnue.edu.vn",
+      "password": "123345",
+      "id": 5
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "1234562",
+      "id": 7
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "1234562",
+      "id": 8
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 9
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "id": 11
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 12
+    },
+    {
+      "email": "stu715903004@hnue.edu.vn",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 13
+    },
+    {
+      "email": "stu715903004@hnue.edu.vn",
+      "password": "123456",
+      "confirmPassword": "1234564",
+      "id": 14
+    },
+    {
+      "email": "ngtthuhang25@gmail.com",
+      "password": "123456",
+      "confirmPassword": "111111111111",
+      "id": 15
+    },
+    {
+      "email": "nguyenthanhnam03092003@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 16
+    }
+  ]
+}

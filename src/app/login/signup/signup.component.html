@@ -1,0 +1,99 @@
+<section class="d-flex justify-center align-item-center">
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+          class="img-fluid"
+          alt="Phone image"
+        />
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <h2 class="mb-2 pb-4" style="color: #efefef">Đăng Ký</h2>
+        <form (ngSubmit)="onSubmit()" [formGroup]="formSignUp">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              formControlName="email"
+              placeholder="Email address"
+            />
+          </div>
+          <div
+            *ngIf="
+              formSignUp.get('email')?.hasError('required') &&
+              (formSignUp.get('email')?.touched ||
+                formSignUp.get('email')?.dirty)
+            "
+          >
+            Email không được để trống
+          </div>
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              class="form-control form-control-lg"
+              placeholder="Enter password"
+            />
+          </div>
+          <div
+            *ngIf="
+              formSignUp.get('password')?.hasError('minlength') &&
+              (formSignUp.get('password')?.touched ||
+                formSignUp.get('password')?.dirty)
+            "
+          >
+            Password không được để trống
+          </div>
+
+          <div class="form-outline mb-4">
+            <input
+              type="password"
+              id="confirmPassword"
+              formControlName="confirmPassword"
+              class="form-control form-control-lg"
+              placeholder="confirmPassword"
+            />
+          </div>
+          <div
+            *ngIf="
+              formSignUp.get('confirmPassword')?.hasError('minlength') &&
+              (formSignUp.get('confirmPassword')?.touched ||
+                formSignUp.get('confirmPassword')?.dirty)
+            "
+            class="text-danger"
+          >
+            Password sai
+          </div>
+          <div
+            *ngIf="
+              formSignUp.hasError('passwordMismatch') &&
+              formSignUp.get('confirmPassword')?.touched
+            "
+            class="text-danger"
+          >
+            Password sai
+          </div>
+          <!-- Submit button -->
+          <button
+            type="submit"
+            class="btn btn-info"
+            style="color: #efefef; padding: 5px"
+          >
+            Sign in
+          </button>
+          <div
+            class="pb-3 to-blue-300"
+            style="margin-left: 4px; color: #efefef"
+          >
+            Bạn đã có tài khoản rồi ? <a href="/login">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

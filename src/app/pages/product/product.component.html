@@ -1,0 +1,27 @@
+<div class="container text-center padding-top-cus">
+  <h2 class="display-4 text-center">All Product</h2>
+  <div
+    class="d-flex flex-wrap justify-content-between align-items-center flex-column flex-lg-row my-5"
+    id="new"
+  >
+    <div
+      class="col-lg-4 col-md-6 col-sm-12"
+      *ngFor="let product of products; index as i"
+    >
+      <div class="card m-2">
+        <a [routerLink]="['/product-detail', product.id]">
+          <img
+            [src]="product.imageUrl"
+            alt=""
+            class="card-img-top"
+            height="300"
+          />
+        </a>
+        <div class="card-body">
+          <p class="card-text fw-bold">{{ product.name }}</p>
+          <small class="text-secondary">{{ product.price }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

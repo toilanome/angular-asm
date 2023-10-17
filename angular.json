@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
@@ -93,6 +94,100 @@
           }
         }
       }
+    },
+    "angular-fontawesome": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/angular-fontawesome",
+      "sourceRoot": "projects/angular-fontawesome/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-fontawesome",
+            "index": "projects/angular-fontawesome/src/index.html",
+            "main": "projects/angular-fontawesome/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/angular-fontawesome/tsconfig.app.json",
+            "assets": [
+              "projects/angular-fontawesome/src/favicon.ico",
+              "projects/angular-fontawesome/src/assets"
+            ],
+            "styles": [
+              "projects/angular-fontawesome/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-fontawesome:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-fontawesome:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-fontawesome:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/angular-fontawesome/tsconfig.spec.json",
+            "assets": [
+              "projects/angular-fontawesome/src/favicon.ico",
+              "projects/angular-fontawesome/src/assets"
+            ],
+            "styles": [
+              "projects/angular-fontawesome/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "cbe4a3cc-b3db-4233-a6e0-a9fa01ff605c"
   }
 }
